@@ -31,14 +31,21 @@ const uczniowe = [
 
 function rozwiazanie()
 {
+    const blizniaki = [];
     for(const uczen of uczniowe)
     {
         const blizniak = {...uczen};
         blizniak.wiek--;
         blizniak.imie=blizniak.imie + " Zenon";
 
+        blizniaki.push(blizniak);
+    }
+    for(const blizniak of blizniaki)
+    {
         uczniowe.push(blizniak);
     }
+
+
 }
 
 rozwiazanie();
